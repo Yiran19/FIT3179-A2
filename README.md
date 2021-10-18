@@ -1,3 +1,3 @@
-# FIT3179-week-8-lab
+# FIT3179-A2
 
 This is the readme file.

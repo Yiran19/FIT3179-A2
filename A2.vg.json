@@ -149,9 +149,9 @@
  "data": {"url": "https://raw.githubusercontent.com/Yiran19/Yiran19/main/2015.csv"},
  
  "title":{
-   "text":" World Happiness Score By Region",
+   "text":" Health and Family",
    "color":"black",
-  "subtitle":["Regionlly, the Region obtained the highest happinesss score is Asutralia and New Zealand(7.3).","By constract, the country which get lowest happiness score is Sub-Saharan Africa(4.2)"],
+  "subtitle":["From this graph, the higher health(life expectancy) and family size, the higher happiness score."," Singapore has the highest life expectancy with the family size and happiness score(1.05,6.8 and 1.02)."," On the other hand, Togo was the lowest(0.28,2.84 and 0.14)."],
    "subtitleColor":"gray",
    "fontSize":35,
    "subtitleFontSize":20
@@ -159,7 +159,7 @@
  "width": 1250,
  "height": 400,
  
- "mark": "point",
+ "mark": "circle",
  
  "params": [{
     "name": "Region",
@@ -168,13 +168,17 @@
   }],
  "encoding": {
  "x": {
-    "field": "Happiness Score", 
+    "field": "Health (Life Expectancy)", 
     "type": "quantitative"
  },
  "y": {
-  "field": "Family",
+  "field": "Happiness Score",
   "type": "quantitative",
-  "axis": {"title": "Family Size"}
+  "axis": {"title": "Happiness Score"}
+  },
+  "size": {
+  "field": "Family", 
+  "type": "quantitative"
   },
   "color": {
   "field":"Region"
@@ -184,8 +188,10 @@
   "value": 0.2
   },
   "tooltip": [
-  {"field": "Family", "type": "quantitative"},
-  {"field": "Happiness Score", "type": "quantitative"}
+    {"field": "Country", "type": "nominal"},
+  {"field": "Health (Life Expectancy)", "type": "quantitative"},
+  {"field": "Happiness Score", "type": "quantitative"},
+  {"field": "Family", "type": "quantitative"}
   ]
  }
   }

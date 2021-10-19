@@ -29,7 +29,7 @@
    "fontSize":35,
    "subtitleFontSize":20
    },
- "width": 1180,
+ "width": 1200,
  "height": 400,
  
  "mark": "circle",
@@ -76,7 +76,7 @@
    "subtitleFontSize":20,
    "fontSize":35
    },
-  "width": 1180,
+  "width": 1200,
   "height": 400,
   "projection": {"type": "equirectangular"},
   "data": {
@@ -120,7 +120,7 @@
    "fontSize":35,
    "subtitleFontSize":20
    },
- "width": 1180,
+ "width": 1200,
  "height": 400,
  
  "mark": "bar",
@@ -163,7 +163,7 @@
    "fontSize":35,
    "subtitleFontSize":20
    },
- "width": 1180,
+ "width": 1200,
  "height": 400,
  "mark": "line",
   "params": [{
@@ -210,5 +210,7 @@
     }
   }
 }
+
+
 
 

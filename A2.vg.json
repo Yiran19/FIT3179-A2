@@ -4,24 +4,28 @@
     "text":["World Happiness Report (2015-2020)"],
     "subtitle":["The World Happiness Report is a landmark survey of the state of global happiness.","This reports review the state of happiness in the world today and show how the new","science of happiness explains personal and national variations in happiness."],
     "color":"black", 
-    "fontSize":35,
+    "fontSize":50,
     "anchor":"middle",
     "baseline":"middle",
+    "font":"serif",
     "subtitleColor":"grey",
     "subtitleFontWeight":"bold",
     "subtitleFont": "monospace",
 
     "subtitleFontStyle":"italic",
-    "subtitleFontSize":15
+    "subtitleFontSize":25
     },
 
   "vconcat": [{
   "title":{
    "text":" World Happiness Score Globally",
    "color":"black",
-   "fontSize":25
+   "subtitle":["Golbally, the country obtained the highest happinesss score is Switzeriand(7.6).","By constract, the country which get lowest happiness score is Togo(2.8)"],
+   "subtitleColor":"grey",
+   "subtitleFontSize":20,
+   "fontSize":35
    },
-  "width": 800,
+  "width": 1000,
   "height": 400,
   "projection": {"type": "equirectangular"},
   "data": {
@@ -60,9 +64,12 @@
  "title":{
    "text":" World Happiness Score By Region",
    "color":"black",
-   "fontSize":25
+  "subtitle":["Regionlly, the Region obtained the highest happinesss score is Asutralia and New Zealand(7.3).","By constract, the country which get lowest happiness score is Sub-Saharan Africa(4.2)"],
+   "subtitleColor":"gray",
+   "fontSize":35,
+   "subtitleFontSize":20
    },
- "width": 800,
+ "width": 1000,
  "height": 400,
  
  "mark": "bar",
@@ -100,9 +107,12 @@
   "title":{
    "text":" Happiness Score VS GDP",
    "color":"black",
-   "fontSize":25
+    "subtitle":["In general, the higher GDP a country get, the higher happiness score they have.","In this line chart, the country which get highest happiness VS GDP is Swizerland","(With 1.4 of GDP and 7.6 of happiness score) "],
+    "subtitleColor":"gray",
+   "fontSize":35,
+   "subtitleFontSize":20
    },
- "width": 800,
+ "width": 1000,
  "height": 400,
  "mark": "line",
   "params": [{

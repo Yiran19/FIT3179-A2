@@ -3,12 +3,11 @@
     "title": {
     "text":["World Happiness Report (2015-2020)"],
     "subtitle":["The World Happiness Report is a landmark survey of the state of global happiness.","This reports review the state of happiness in the world today and show how the new","science of happiness explains personal and national variations in happiness."],
-    "color":"darkblue",
-    "font": "serif", 
+    "color":"black", 
     "fontSize":35,
     "anchor":"middle",
     "baseline":"middle",
-    "subtitleColor":"royalblue",
+    "subtitleColor":"grey",
     "subtitleFontWeight":"bold",
     "subtitleFont": "monospace",
 
@@ -19,7 +18,7 @@
   "vconcat": [{
   "title":{
    "text":" World Happiness Score Globally",
-   "color":"steelblue",
+   "color":"black",
    "fontSize":25
    },
   "width": 600,
@@ -27,6 +26,7 @@
   "projection": {"type": "equirectangular"},
   "data": {
     "url": "https://raw.githubusercontent.com/Yiran19/Yiran19/main/world_happiness_report.geo.json",
+    
     "format": {"type": "topojson", "feature": "world_happiness_report.geo"}
   },
   "transform": [
@@ -56,14 +56,17 @@
   },{
 
  "data": {"url": "https://raw.githubusercontent.com/Yiran19/Yiran19/main/2015.csv"},
+ 
  "title":{
    "text":" World Happiness Score By Region",
-   "color":"steelblue",
+   "color":"black",
    "fontSize":25
    },
  "width": 600,
  "height": 400,
+ 
  "mark": "bar",
+ 
  "params": [{
     "name": "Region",
     "select": {"type": "point", "fields": ["Region"]},
@@ -96,7 +99,7 @@
    "data": {"url": "https://raw.githubusercontent.com/Yiran19/Yiran19/main/2015.csv"},
   "title":{
    "text":" Happiness Score VS GDP",
-   "color":"steelblue",
+   "color":"black",
    "fontSize":25
    },
  "width": 600,

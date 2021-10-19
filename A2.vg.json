@@ -25,7 +25,7 @@
    "subtitleFontSize":20,
    "fontSize":35
    },
-  "width": 1000,
+  "width": 1250,
   "height": 400,
   "projection": {"type": "equirectangular"},
   "data": {
@@ -69,7 +69,7 @@
    "fontSize":35,
    "subtitleFontSize":20
    },
- "width": 1000,
+ "width": 1250,
  "height": 400,
  
  "mark": "bar",
@@ -112,7 +112,7 @@
    "fontSize":35,
    "subtitleFontSize":20
    },
- "width": 1000,
+ "width": 1250,
  "height": 400,
  "mark": "line",
   "params": [{
@@ -140,6 +140,51 @@
   "tooltip": [
   {"field": "Country", "type": "nominal"},
   {"field": "Economy (GDP per Capita)", "type": "quantitative"},
+  {"field": "Happiness Score", "type": "quantitative"}
+  ]
+ }
+  },
+  {
+
+ "data": {"url": "https://raw.githubusercontent.com/Yiran19/Yiran19/main/2015.csv"},
+ 
+ "title":{
+   "text":" World Happiness Score By Region",
+   "color":"black",
+  "subtitle":["Regionlly, the Region obtained the highest happinesss score is Asutralia and New Zealand(7.3).","By constract, the country which get lowest happiness score is Sub-Saharan Africa(4.2)"],
+   "subtitleColor":"gray",
+   "fontSize":35,
+   "subtitleFontSize":20
+   },
+ "width": 1250,
+ "height": 400,
+ 
+ "mark": "point",
+ 
+ "params": [{
+    "name": "Region",
+    "select": {"type": "point", "fields": ["Region"]},
+    "bind": "legend"
+  }],
+ "encoding": {
+ "x": {
+    "field": "Happiness Score", 
+    "type": "quantitative"
+ },
+ "y": {
+  "field": "Family",
+  "type": "quantitative",
+  "axis": {"title": "Family Size"}
+  },
+  "color": {
+  "field":"Region"
+  },
+  "opacity": {
+  "condition": {"param": "Region", "value": 1},
+  "value": 0.2
+  },
+  "tooltip": [
+  {"field": "Family", "type": "quantitative"},
   {"field": "Happiness Score", "type": "quantitative"}
   ]
  }
